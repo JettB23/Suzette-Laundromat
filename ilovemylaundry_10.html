@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Love My Laundry | Wash, Dry & Fold + Pickup & Delivery in Cape Town</title>
+<meta name="description" content="Professional laundry in Cape Town. Wash, dry & fold from R34/kg, dry cleaning, ironing, plus free Thursday pickup & delivery. Book a collection on WhatsApp.">
+<meta name="theme-color" content="#1f7ae0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --white:#ffffff;
+  --off:#f6fafe;
+  --mist:#eef5fc;
+  --grey-50:#f4f7fa;
+  --grey-100:#e9eef4;
+  --grey-200:#d7e0ea;
+  --grey-400:#9bb0c4;
+  --ink:#16263a;
+  --ink-soft:#41566c;
+  --ink-faint:#6c8095;
+  --blue:#1f7ae0;
+  --blue-bright:#2e90ff;
+  --blue-deep:#155bb0;
+  --blue-wash:#e3f0fd;
+  --sky:#bfe0fb;
+  --aqua:#6fc5e8;
+  --mint:#d7f3ec;
+  --line:#e4ecf4;
+  --shadow-sm:0 2px 8px rgba(31,90,160,.06);
+  --shadow:0 14px 40px -16px rgba(21,60,120,.20);
+  --shadow-lg:0 30px 70px -30px rgba(21,60,120,.32);
+  --r-sm:14px;
+  --r:22px;
+  --r-lg:30px;
+  --r-pill:999px;
+  --maxw:1200px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --font-head:'Manrope',-apple-system,system-ui,sans-serif;
+  --font-body:'Manrope',-apple-system,system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--font-body);
+  color:var(--ink);
+  background:var(--white);
+  line-height:1.6;
+  font-size:17px;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:var(--font-head);font-weight:700;line-height:1.12;letter-spacing:-.02em;color:var(--ink)}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+ul{list-style:none}
+section{position:relative}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--blue);
+}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--blue);border-radius:2px}
+.section-head{max-width:640px;margin:0 auto 56px;text-align:center}
+.section-head h2{font-size:clamp(2rem,4.4vw,3.1rem);margin:16px 0 14px}
+.section-head p{color:var(--ink-soft);font-size:1.08rem}
+
+/* ---------- BUTTONS ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:var(--font-body);font-weight:700;font-size:1rem;
+  padding:15px 28px;border-radius:var(--r-pill);border:none;cursor:pointer;
+  transition:transform .25s var(--ease),box-shadow .3s var(--ease),background .25s,border-color .25s,color .2s;
+  white-space:nowrap;line-height:1;text-align:center;user-select:none;-webkit-tap-highlight-color:transparent;
+}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-primary{background:var(--blue);color:#fff;box-shadow:0 10px 26px -10px rgba(31,122,224,.7)}
+.btn-primary:hover{background:var(--blue-deep);transform:translateY(-2px);box-shadow:0 16px 34px -10px rgba(31,122,224,.8)}
+.btn-ghost{background:#fff;color:var(--ink);border:1.5px solid var(--grey-200)}
+.btn-ghost:hover{border-color:var(--blue);color:var(--blue);transform:translateY(-2px);box-shadow:0 10px 24px -14px rgba(31,122,224,.5)}
+.btn-wa{background:#25d366;color:#fff;box-shadow:0 10px 26px -10px rgba(37,211,102,.7)}
+.btn-wa:hover{background:#1eb455;transform:translateY(-2px);box-shadow:0 16px 34px -10px rgba(37,211,102,.8)}
+.btn-lg{padding:18px 34px;font-size:1.05rem}
+/* tactile press feedback — all buttons */
+.btn:active{transform:translateY(0) scale(.97);transition-duration:.06s}
+/* unified accessible focus ring (keyboard only, never on mouse) */
+a:focus-visible,button:focus-visible,.btn:focus-visible{
+  outline:3px solid rgba(31,122,224,.55);outline-offset:3px;border-radius:var(--r-pill);
+}
+.fq:focus-visible,.fitem .fq:focus-visible{outline-offset:-3px;border-radius:var(--r-sm)}
+.brand:focus-visible,.nav-links a:focus-visible,.footer a:focus-visible,.topbar a:focus-visible{outline-offset:4px;border-radius:8px}
+
+/* ---------- TOP BAR ---------- */
+.topbar{
+  background:var(--ink);color:#cfe0f0;font-size:13.5px;font-weight:500;
+  position:relative;z-index:60;
+}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:42px;gap:18px}
+.topbar a{display:inline-flex;align-items:center;gap:7px;color:#dce8f5;transition:color .2s}
+.topbar a:hover{color:#fff}
+.topbar svg{width:14px;height:14px;opacity:.8}
+.topbar .tb-left{display:flex;gap:22px;align-items:center}
+.topbar .tb-hours{color:#9fb6cc}
+@media(max-width:760px){.topbar .tb-hours{display:none}.topbar .wrap{justify-content:center;gap:24px}}
+
+/* ---------- NAV ---------- */
+.nav{
+  position:sticky;top:0;z-index:50;background:rgba(255,255,255,.86);
+  backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px);
+  border-bottom:1px solid transparent;transition:box-shadow .3s,border-color .3s,background .3s;
+}
+.nav.scrolled{box-shadow:var(--shadow-sm);border-color:var(--line);background:rgba(255,255,255,.94)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:11px;font-family:var(--font-head);font-weight:600;font-size:1.32rem;color:var(--ink);letter-spacing:-.02em}
+.brand-logo{height:46px;width:auto;display:block;object-fit:contain}
+.brand-fallback{display:flex;align-items:center;gap:11px}
+.brand .mark{
+  width:42px;height:42px;border-radius:13px;flex:none;position:relative;
+  background:linear-gradient(145deg,var(--blue-bright),var(--blue-deep));
+  box-shadow:0 6px 16px -6px rgba(31,122,224,.7);
+  display:grid;place-items:center;
+}
+.brand .mark svg{width:24px;height:24px}
+.brand b{font-weight:700}
+.brand .heart{color:var(--blue)}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-links a{
+  padding:10px 15px;border-radius:var(--r-pill);font-weight:600;font-size:.96rem;color:var(--ink-soft);
+  transition:color .2s,background .2s;
+}
+.nav-links a:hover{color:var(--blue);background:var(--blue-wash)}
+.nav-cta{display:flex;align-items:center;gap:12px;margin-left:8px}
+.burger{display:none;width:46px;height:46px;border-radius:13px;border:1.5px solid var(--grey-200);background:#fff;cursor:pointer;flex-direction:column;gap:5px;align-items:center;justify-content:center}
+.burger span{width:20px;height:2px;background:var(--ink);border-radius:2px;transition:.3s}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:1000px){
+  .nav-links,.nav-cta{display:none}
+  .burger{display:flex}
+}
+/* mobile drawer */
+.drawer{
+  position:fixed;inset:0 0 0 auto;width:min(86vw,360px);background:#fff;z-index:70;
+  transform:translateX(100%);transition:transform .4s var(--ease);
+  box-shadow:-20px 0 60px -20px rgba(20,40,80,.3);padding:90px 28px 32px;display:flex;flex-direction:column;gap:6px;
+}
+.drawer.open{transform:translateX(0)}
+.drawer a{padding:15px 16px;border-radius:14px;font-weight:600;font-size:1.05rem;color:var(--ink);transition:background .2s}
+.drawer a:hover{background:var(--blue-wash);color:var(--blue)}
+.drawer .btn{margin-top:14px}
+.drawer-close{position:absolute;top:24px;right:24px;width:42px;height:42px;border-radius:12px;border:1.5px solid var(--grey-200);background:#fff;cursor:pointer;font-size:22px;color:var(--ink);line-height:1}
+.scrim{position:fixed;inset:0;background:rgba(16,30,50,.4);backdrop-filter:blur(2px);z-index:65;opacity:0;visibility:hidden;transition:.3s}
+.scrim.open{opacity:1;visibility:visible}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  *{animation:none!important}
+  html{scroll-behavior:auto}
+}
+
+/* ============ GLOBAL MOBILE REFINEMENTS ============ */
+@media(max-width:600px){
+  body{font-size:16px}
+  /* tighter, consistent section rhythm */
+  .section-head{margin-bottom:36px}
+  .section-head h2{font-size:clamp(1.65rem,6.4vw,2.1rem)}
+  .section-head p{font-size:1rem}
+  .eyebrow{font-size:12px}
+  /* comfortable tap targets everywhere */
+  .btn{padding:14px 22px}
+  .btn-lg{padding:16px 26px;font-size:1rem}
+  .nav-links a,.drawer a{min-height:44px;display:flex;align-items:center}
+  /* prevent any long word/url from forcing width */
+  h1,h2,h3,h4,p,a,span{overflow-wrap:break-word}
+  /* CTA bands stack their buttons full-width and comfy */
+  .ctaband-inner{flex-direction:column;align-items:flex-start;gap:18px;padding:30px 24px}
+  .ctaband-inner .acts{width:100%;flex-direction:column}
+  .ctaband-inner .acts .btn{width:100%}
+  /* early-bird & final CTA buttons full width */
+  .eb-card{flex-direction:column;align-items:flex-start;text-align:left}
+  .eb-card .btn{width:100%}
+  .fc-cta{flex-direction:column}
+  .fc-cta .btn{width:100%}
+  /* trust strip: a touch tighter */
+  .trustbar{padding:20px 0}
+  .trustbar .row{gap:12px 18px}
+  .trustbar .tb{font-size:.88rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="tb-left">
+      <a href="tel:+27731086342" aria-label="Call us">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        073 108 6342
+      </a>
+      <span class="tb-hours">Mon–Sat 8am–5pm · Sun Closed</span>
+    </div>
+    <a href="https://wa.me/message/PV7QPXLDF6WYI1" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35zM12 2a10 10 0 0 0-8.6 15.06L2 22l5.06-1.33A10 10 0 1 0 12 2z"/></svg>
+      WhatsApp Booking
+    </a>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <a href="#home" class="brand" aria-label="I Love My Laundry home">
+      <!-- REAL LOGO: referenced from client's live site. Swap src for a higher-res/SVG version when available. -->
+      <img class="brand-logo" src="https://www.ilovemylaundry.com/wp-content/uploads/2022/11/logo-150x86.png" alt="I Love My Laundry" width="150" height="86"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <span class="brand-fallback" style="display:none">
+        <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="6"/><path d="M9.5 13a2.5 2.5 0 0 1 2.5-2.5"/><path d="M4 6h16M7 6V4h4v2"/></svg></span>
+        <span>I&nbsp;<span class="heart">♥</span>&nbsp;My&nbsp;<b>Laundry</b></span>
+      </span>
+    </a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#commercial">Commercial</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="tel:+27731086342" class="btn btn-ghost">Call Us</a>
+      <a href="https://wa.me/message/PV7QPXLDF6WYI1" target="_blank" rel="noopener" class="btn btn-primary">Book A Collection</a>
+    </div>
+    <button type="button" class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- mobile drawer -->
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <button type="button" class="drawer-close" id="drawerClose" aria-label="Close menu">×</button>
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+  <a href="#commercial">Commercial Laundry</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
+  <a href="tel:+27731086342" class="btn btn-ghost">Call 073 108 6342</a>
+  <a href="https://wa.me/message/PV7QPXLDF6WYI1" target="_blank" rel="noopener" class="btn btn-primary">Book A Collection</a>
+</aside>
+
+<!-- ============ HERO ============ -->
+<style>
+.hero{
+  background:
+    radial-gradient(1100px 520px at 78% -8%,#e3f0fd 0%,rgba(227,240,253,0) 60%),
+    radial-gradient(800px 500px at 8% 12%,#eef9f5 0%,rgba(238,249,245,0) 55%),
+    linear-gradient(180deg,#fbfdff 0%,#ffffff 100%);
+  padding:64px 0 84px;overflow:hidden;
+}
+.hero .wrap{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);
+  padding:7px 16px 7px 8px;border-radius:var(--r-pill);font-size:13.5px;font-weight:600;color:var(--ink-soft);
+  box-shadow:var(--shadow-sm);margin-bottom:24px;
+}
+.hero-badge .gpill{display:inline-flex;align-items:center;gap:6px;background:var(--blue-wash);color:var(--blue-deep);padding:4px 10px;border-radius:var(--r-pill);font-weight:700;font-size:12.5px}
+.hero-badge .gpill .stars{color:#f5a623;letter-spacing:.5px;font-size:11px}
+.hero-badge b{color:var(--ink);font-weight:700}
+.hero h1{font-size:clamp(2.4rem,4.9vw,3.85rem);font-weight:800;margin-bottom:20px;letter-spacing:-.025em;line-height:1.08}
+.hero h1 .accent{color:var(--blue)}
+.hero .sub{font-size:1.16rem;color:var(--ink-soft);max-width:510px;margin-bottom:30px}
+.hero .sub b{color:var(--ink);font-weight:700}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:28px}
+.trust-row{display:flex;flex-wrap:wrap;gap:10px 22px}
+.trust-row .t{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.95rem;color:var(--ink-soft)}
+.trust-row .tick{
+  width:22px;height:22px;border-radius:50%;background:var(--mint);color:#1d9e7f;flex:none;
+  display:grid;place-items:center;
+}
+.trust-row .tick svg{width:13px;height:13px}
+
+/* hero photo visual */
+.hero-visual{position:relative;height:540px}
+.hero-photo{
+  position:absolute;inset:0;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-lg);
+  background:linear-gradient(160deg,#dcecfb 0%,#cfe3f7 45%,#bcd9f4 100%);
+}
+/* REAL IMAGE: fills the frame, zooms gently on hover */
+.hero-photo .hero-img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;
+  opacity:0;transition:opacity .6s var(--ease),transform .9s var(--ease);transform:scale(1.02);
+}
+.hero-photo .hero-img.loaded{opacity:1;transform:scale(1)}
+.hero-photo:hover .hero-img.loaded{transform:scale(1.06)}
+/* dark gradient overlay for text/chip readability — only visible once a photo loads */
+.hero-photo .hero-grad{
+  position:absolute;inset:0;z-index:1;opacity:0;transition:opacity .6s var(--ease);pointer-events:none;
+  background:linear-gradient(180deg,rgba(10,30,60,.05) 0%,rgba(10,30,60,.10) 55%,rgba(10,30,60,.38) 100%);
+}
+.hero-photo:has(.hero-img.loaded) .hero-grad{opacity:1}
+.hero-photo:has(.hero-img.loaded) .ph{display:none}
+.hero-photo .ph{
+  position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;
+  color:#5b86b8;text-align:center;padding:24px;
+}
+.hero-photo .ph svg{width:62px;height:62px;opacity:.55}
+.hero-photo .ph b{font-family:var(--font-head);font-weight:600;font-size:1.05rem;color:#4d7bb0}
+.hero-photo .ph span{font-size:.84rem;color:#6e97c4;max-width:240px}
+/* floating credibility chips on the photo */
+.hero-chip{
+  position:absolute;z-index:3;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-radius:18px;
+  box-shadow:0 16px 38px -16px rgba(21,60,120,.45);padding:14px 18px;display:flex;align-items:center;gap:13px;
+  border:1px solid rgba(255,255,255,.8);
+}
+.hero-chip .ic{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;flex:none}
+.hero-chip .ic.blue{background:var(--blue-wash);color:var(--blue)}
+.hero-chip .ic.green{background:#dff7e9;color:#1d9e5f}
+.hero-chip .ic svg{width:23px;height:23px}
+.hero-chip .tx b{display:block;font-family:var(--font-head);font-size:1rem;color:var(--ink);line-height:1.15;font-weight:700}
+.hero-chip .tx span{font-size:.8rem;color:var(--ink-faint);font-weight:500}
+.chip-tl{top:24px;left:-22px;animation:float 6.5s ease-in-out infinite}
+.chip-br{bottom:30px;right:-18px;animation:float 7s ease-in-out .6s infinite}
+.chip-bl{bottom:88px;left:-26px;animation:float 6s ease-in-out 1.1s infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+
+@media(max-width:920px){
+  .hero .wrap{grid-template-columns:1fr;gap:22px}
+  .hero-visual{height:420px;order:2}
+  .hero-content{order:1}
+  /* keep chips fully inside the image frame on tablet/mobile */
+  .chip-tl{top:16px;left:16px}
+  .chip-br{bottom:16px;right:16px}
+  .chip-bl{display:none}
+}
+@media(max-width:540px){
+  .hero{padding:40px 0 56px}
+  .hero h1{font-size:clamp(2.1rem,8vw,2.7rem)}
+  .hero .sub{font-size:1.05rem}
+  .hero-visual{height:360px}
+  .hero-cta{flex-direction:column}
+  .hero-cta .btn{width:100%}
+  .hero-chip{padding:10px 13px;border-radius:15px}
+  .hero-chip .ic{width:36px;height:36px;border-radius:11px}
+  .hero-chip .ic svg{width:19px;height:19px}
+  .hero-chip .tx b{font-size:.9rem}
+  .hero-chip .tx span{font-size:.74rem}
+}
+</style>
+
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="hero-content reveal">
+      <span class="hero-badge"><span class="gpill"><span class="stars">★★★★★</span> 4.2</span> Rated by 346+ Cape Town customers</span>
+      <h1>Laundry Collected, Cleaned &amp; <span class="accent">Delivered To Your Door</span></h1>
+      <p class="sub">Cape Town's trusted laundry pickup &amp; delivery specialists. <b>Four branches</b>, professional care, and same-day service for households, hotels and guesthouses.</p>
+      <div class="hero-cta">
+        <a href="https://wa.me/message/PV7QPXLDF6WYI1" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35zM12 2a10 10 0 0 0-8.6 15.06L2 22l5.06-1.33A10 10 0 1 0 12 2z"/></svg>
+          Book A Collection
+        </a>
+        <a href="#services" class="btn btn-ghost btn-lg">View Services</a>
+      </div>
+      <div class="trust-row">
+        <span class="t"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span>Same-Day Service</span>
+        <span class="t"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span>Affordable Pricing</span>
+        <span class="t"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span>Professional Care</span>
+        <span class="t"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span>Pickup &amp; Delivery</span>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="hero-photo">
+        <!-- ============================================================
+             HERO IMAGE SYSTEM — drop in the client's real photo here.
+             1. Put the photo URL in the <img src="..."> below.
+             2. The placeholder caption auto-hides once the image loads.
+             Recommended: bright laundromat interior, staff folding laundry,
+             a collection/delivery van, or commercial linen — approx 1200x1400, landscape or portrait both work.
+        ============================================================ -->
+        <img class="hero-img" src="" alt="I Love My Laundry — professional laundry service in Cape Town"
+             onload="this.classList.add('loaded')"
+             onerror="this.style.display='none'">
+        <div class="hero-grad" aria-hidden="true"></div>
+        <div class="ph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.5-3.5a2 2 0 0 0-2.8 0L7 19"/></svg>
+          <b>Add your hero photo here</b>
+          <span>Bright laundromat interior, staff folding laundry, or a collection &amp; delivery shot</span>
+        </div>
+      </div>
+      <div class="hero-chip chip-tl">
+        <span class="ic green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <span class="tx"><b>Same-day ready</b><span>Express from 2–3 hrs</span></span>
+      </div>
+      <div class="hero-chip chip-bl">
+        <span class="ic blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="15" height="11" rx="2"/><path d="M16 9h4l3 3v5h-7"/><circle cx="5.5" cy="18.5" r="2"/><circle cx="18.5" cy="18.5" r="2"/></svg></span>
+        <span class="tx"><b>Free Thursday pickup</b><span>Door-to-door delivery</span></span>
+      </div>
+      <div class="hero-chip chip-br">
+        <span class="ic blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l8-4 8 4v14"/><path d="M9 9h.01M9 13h.01M15 9h.01M15 13h.01"/></svg></span>
+        <span class="tx"><b>4 Cape Town branches</b><span>City Bowl &amp; Atlantic Seaboard</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS STRIP ============ -->
+<style>
+.stats{background:var(--ink);padding:38px 0}
+.stats .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.stats .s b{display:block;font-family:var(--font-head);font-size:2.5rem;color:#fff;font-weight:600;line-height:1}
+.stats .s span{display:block;margin-top:8px;color:#9fb6cc;font-size:.92rem;font-weight:600;letter-spacing:.02em}
+.stats .s b .small{font-size:1.4rem}
+@media(max-width:680px){.stats .grid{grid-template-columns:repeat(2,1fr);gap:30px 24px}.stats .s b{font-size:2.1rem}}
+</style>
+<section class="stats">
+  <div class="wrap">
+    <div class="grid">
+      <div class="s reveal"><b>4</b><span>Cape Town Branches</span></div>
+      <div class="s reveal"><b>346<span class="small">+</span></b><span>5-Star Reviews</span></div>
+      <div class="s reveal"><b>2–3<span class="small">hr</span></b><span>Express Available</span></div>
+      <div class="s reveal"><b>R34<span class="small">/kg</span></b><span>Wash, Dry & Fold</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST BUILDER STRIP ============ -->
+<style>
+.trustbar{background:#fff;border-bottom:1px solid var(--line);padding:26px 0}
+.trustbar .row{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px 30px}
+.trustbar .tb{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:.95rem;color:var(--ink-soft)}
+.trustbar .tb svg{width:20px;height:20px;color:var(--blue);flex:none}
+.trustbar .dot{width:5px;height:5px;border-radius:50%;background:var(--grey-200)}
+@media(max-width:820px){.trustbar .dot{display:none}.trustbar .row{gap:14px 22px}}
+</style>
+<section class="trustbar">
+  <div class="wrap">
+    <div class="row">
+      <span class="tb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M8.5 13.5 7 22l5-3 5 3-1.5-8.5"/></svg>10+ Years Experience</span>
+      <span class="dot"></span>
+      <span class="tb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="13" r="6"/><path d="M3 7l2-3h14l2 3M3 7h18"/></svg>Thousands of Loads Processed</span>
+      <span class="dot"></span>
+      <span class="tb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l8-4 8 4v14"/></svg>Trusted by Hotels &amp; Guesthouses</span>
+      <span class="dot"></span>
+      <span class="tb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V5l-8-3z"/><path d="M9 12l2 2 4-4"/></svg>Fully Insured Service</span>
+      <span class="dot"></span>
+      <span class="tb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-6 9 6v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9z"/></svg>Commercial Laundry Specialists</span>
+      <span class="dot"></span>
+      <span class="tb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Fast Turnaround Times</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROUDLY SERVING CAPE TOWN ============ -->
+<style>
+.serving{padding:84px 0 76px;background:linear-gradient(180deg,var(--off),#fff)}
+.serving .lead-copy{max-width:580px;margin:0 auto 40px;text-align:center;color:var(--ink-soft);font-size:1.05rem}
+.area-badges{display:flex;flex-wrap:wrap;gap:13px;justify-content:center;max-width:880px;margin:0 auto}
+.area-badge{
+  display:inline-flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--line);
+  padding:12px 20px;border-radius:var(--r-pill);font-weight:600;font-size:.98rem;color:var(--ink);
+  box-shadow:var(--shadow-sm);transition:transform .3s var(--ease),box-shadow .3s,border-color .3s,color .3s;
+}
+.area-badge:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--blue);color:var(--blue)}
+.area-badge svg{width:17px;height:17px;color:var(--blue)}
+.serving .area-note{text-align:center;margin-top:34px;color:var(--ink-faint);font-size:.95rem}
+.serving .area-note b{color:var(--blue)}
+/* enhanced operational layout */
+.serve-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:stretch;max-width:1060px;margin:0 auto}
+.serve-map{position:relative;min-height:380px;border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-sm);background:
+  radial-gradient(circle at 42% 46%,#dcecfb 0%,#cfe3f7 40%,#bcd9f4 100%)}
+.serve-map-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .6s var(--ease)}
+.serve-map-img.loaded{opacity:1}
+.serve-map:has(.serve-map-img.loaded) .serve-map-ph{display:none}
+.serve-map-ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;padding:24px;color:#4d7bb0}
+.serve-map-ph b{font-family:var(--font-head);font-weight:600;font-size:1.05rem;color:#3f6fa6}
+.serve-map-ph span{font-size:.84rem;color:#6e97c4;max-width:260px}
+.radius-ring{width:120px;height:120px;border-radius:50%;border:2px dashed rgba(31,122,224,.5);display:grid;place-items:center;position:relative;animation:radiuspulse 3.5s ease-in-out infinite}
+.radius-ring::before{content:"";position:absolute;inset:18px;border-radius:50%;background:rgba(31,122,224,.10)}
+.radius-dot{width:16px;height:16px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 6px rgba(31,122,224,.18);position:relative;z-index:1}
+@keyframes radiuspulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.06);opacity:.85}}
+.map-radius-chip{position:absolute;right:18px;bottom:18px;z-index:2;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-radius:14px;padding:10px 16px;box-shadow:0 14px 34px -16px rgba(21,60,120,.45);text-align:center}
+.map-radius-chip b{display:block;font-family:var(--font-head);font-size:1.25rem;font-weight:800;color:var(--ink);line-height:1}
+.map-radius-chip span{font-size:.78rem;color:var(--ink-faint);font-weight:600}
+.serve-detail{display:flex;flex-direction:column;justify-content:center}
+.serve-routes{display:flex;flex-direction:column;gap:18px;margin-bottom:26px}
+.route{display:flex;gap:15px;align-items:flex-start}
+.route .r-ic{width:46px;height:46px;border-radius:13px;background:var(--blue-wash);color:var(--blue);display:grid;place-items:center;flex:none}
+.route .r-ic svg{width:23px;height:23px}
+.route b{display:block;font-family:var(--font-head);font-size:1.05rem;color:var(--ink);margin-bottom:3px}
+.route span{font-size:.93rem;color:var(--ink-soft);line-height:1.5}
+.serve-detail .area-badges{justify-content:flex-start;max-width:none;margin:0;gap:10px}
+.serve-detail .area-badge{padding:9px 15px;font-size:.9rem;box-shadow:none}
+@media(max-width:860px){.serve-grid{grid-template-columns:1fr;gap:26px}.serve-map{min-height:280px}}
+@media(max-width:600px){.serving{padding:60px 0 56px}}
+</style>
+<section class="serving">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-bottom:24px">
+      <span class="eyebrow">Service Areas</span>
+      <h2>Proudly serving Cape Town</h2>
+    </div>
+    <p class="lead-copy reveal">From the City Bowl to the Atlantic Seaboard and Southern Suburbs — we run regular collection and delivery routes right across the city, with same-day options on most areas.</p>
+
+    <div class="serve-grid reveal">
+      <!-- coverage map -->
+      <div class="serve-map">
+        <!-- MAP SLOT: drop a real coverage/route map image here (Google Maps screenshot or branded map). Put URL in src below. -->
+        <img class="serve-map-img" src="" alt="I Love My Laundry collection & delivery coverage across Cape Town" onload="this.classList.add('loaded')" onerror="this.style.display='none'">
+        <div class="serve-map-ph">
+          <span class="radius-ring"><span class="radius-dot"></span></span>
+          <b>Cape Town coverage map</b>
+          <span>Drop in a route/coverage map — City Bowl, Atlantic Seaboard &amp; Southern Suburbs</span>
+        </div>
+        <div class="map-radius-chip"><b>~15km</b><span>service radius</span></div>
+      </div>
+
+      <!-- operational detail -->
+      <div class="serve-detail">
+        <div class="serve-routes">
+          <div class="route">
+            <span class="r-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="15" height="11" rx="2"/><path d="M16 9h4l3 3v5h-7"/><circle cx="5.5" cy="18.5" r="2"/><circle cx="18.5" cy="18.5" r="2"/></svg></span>
+            <div><b>Daily collection routes</b><span>We pick up from your door across the city, six days a week.</span></div>
+          </div>
+          <div class="route">
+            <span class="r-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <div><b>Delivery to your door</b><span>Clean, folded laundry returned straight to you — no trips needed.</span></div>
+          </div>
+          <div class="route">
+            <span class="r-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div><b>Same-day availability</b><span>Book early and we'll turn most loads around the same day.</span></div>
+          </div>
+        </div>
+        <div class="area-badges">
+          <span class="area-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Sea Point</span>
+          <span class="area-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Green Point</span>
+          <span class="area-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Camps Bay</span>
+          <span class="area-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>City Bowl</span>
+          <span class="area-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Claremont</span>
+          <span class="area-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Observatory</span>
+          <span class="area-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Woodstock</span>
+          <span class="area-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Southern Suburbs</span>
+        </div>
+      </div>
+    </div>
+    <p class="area-note reveal">Not sure if we cover your area? <b>Message us on WhatsApp</b> — chances are we do.</p>
+  </div>
+</section>
+
+<!-- ============ REVIEWS (marquee carousel) ============ -->
+<style>
+.reviews{padding:90px 0 96px;background:#fff;overflow:hidden}
+.rev-top{display:flex;align-items:center;justify-content:center;gap:0;flex-direction:column;margin-bottom:44px}
+.google-card{
+  display:inline-flex;align-items:center;gap:20px;background:#fff;border:1px solid var(--line);
+  border-radius:var(--r);padding:20px 30px;box-shadow:var(--shadow-sm);margin-bottom:8px;flex-wrap:wrap;justify-content:center;
+}
+.google-card .glogo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem}
+.google-card .glogo .g{font-size:1.4rem;font-weight:700}
+.gb{color:#4285F4}.gr{color:#EA4335}.gy{color:#FBBC05}.gg{color:#34A853}
+.google-card .divider{width:1px;height:42px;background:var(--line)}
+.google-card .score{text-align:center}
+.google-card .score .num{font-family:var(--font-head);font-size:2rem;font-weight:800;color:var(--ink);line-height:1}
+.google-card .score .stars{color:#f5a623;font-size:14px;letter-spacing:1px;margin-top:3px}
+.google-card .count{text-align:left;font-size:.92rem;color:var(--ink-faint);line-height:1.4}
+.google-card .count b{display:block;color:var(--ink);font-size:1.1rem;font-family:var(--font-head);font-weight:700}
+
+/* marquee */
+.rev-marquee{position:relative;mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.rev-track{display:flex;gap:22px;width:max-content;animation:revscroll 46s linear infinite}
+.rev-marquee:hover .rev-track{animation-play-state:paused}
+@keyframes revscroll{to{transform:translateX(-50%)}}
+.rev{
+  width:380px;flex:none;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px;
+  display:flex;flex-direction:column;box-shadow:var(--shadow-sm);
+}
+.rev .head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.rev .stars{color:#f5a623;letter-spacing:1.5px;font-size:14px}
+.rev .gmark{width:22px;height:22px}
+.rev p{color:var(--ink-soft);font-size:.96rem;line-height:1.6;margin-bottom:18px;flex:1}
+.rev .who{display:flex;align-items:center;gap:12px}
+.rev .av{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--blue-bright),var(--blue-deep));color:#fff;display:grid;place-items:center;font-weight:700;font-family:var(--font-head);font-size:1rem;flex:none}
+.rev .who b{display:block;color:var(--ink);font-size:.95rem;font-weight:700}
+.rev .who span{font-size:.8rem;color:var(--ink-faint)}
+@media(max-width:600px){.reviews{padding:60px 0}.rev{width:300px}}
+@media(prefers-reduced-motion:reduce){.rev-track{animation:none;flex-wrap:nowrap;overflow-x:auto}}
+</style>
+<section class="reviews">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-bottom:32px">
+      <span class="eyebrow">Customer Reviews</span>
+      <h2>Loved by Cape Town</h2>
+      <p>Don't just take our word for it — here's what our customers say across our branches.</p>
+    </div>
+    <div class="rev-top reveal">
+      <div class="google-card">
+        <div class="glogo"><span class="g"><span class="gb">G</span><span class="gr">o</span><span class="gy">o</span><span class="gb">g</span><span class="gg">l</span><span class="gr">e</span></span> Reviews</div>
+        <div class="divider"></div>
+        <div class="score"><div class="num">4.2</div><div class="stars">★★★★★</div></div>
+        <div class="divider"></div>
+        <div class="count"><b>346+</b> verified reviews</div>
+      </div>
+    </div>
+  </div>
+  <div class="rev-marquee reveal">
+    <div class="rev-track">
+      <div class="rev"><div class="head"><span class="stars">★★★★★</span><svg class="gmark" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 4.75c1.62 0 3.06.56 4.21 1.64l3.15-3.15A10.5 10.5 0 0 0 12 .5 11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 6.68 9.14 4.75 12 4.75z"/></svg></div><p>I consistently use their laundry services whenever I'm in Cape Town and I'm always impressed. Staff are courteous, communication is clear, and the pickup &amp; delivery is efficient and reliable. Highly competitive pricing too.</p><div class="who"><span class="av">R</span><div><b>Raeesa Osman</b><span>Google Review</span></div></div></div>
+      <div class="rev"><div class="head"><span class="stars">★★★★★</span><svg class="gmark" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 4.75c1.62 0 3.06.56 4.21 1.64l3.15-3.15A10.5 10.5 0 0 0 12 .5 11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 6.68 9.14 4.75 12 4.75z"/></svg></div><p>Tourists — don't go anywhere else! I reached out on WhatsApp, a human followed up and scheduled a pickup from my hotel. Pickup was 8am and my clothes came back nicely folded by noon. Smooth transaction.</p><div class="who"><span class="av">K</span><div><b>Kim Srey</b><span>Google Review</span></div></div></div>
+      <div class="rev"><div class="head"><span class="stars">★★★★★</span><svg class="gmark" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 4.75c1.62 0 3.06.56 4.21 1.64l3.15-3.15A10.5 10.5 0 0 0 12 .5 11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 6.68 9.14 4.75 12 4.75z"/></svg></div><p>So glad we found I Love My Laundry. Communication, pickup and delivery was smooth. Clean, nice-smelling, ironed clothes and the folding was beautifully done. Definitely using them again!</p><div class="who"><span class="av">B</span><div><b>Brenda Lee</b><span>Google Review</span></div></div></div>
+      <div class="rev"><div class="head"><span class="stars">★★★★★</span><svg class="gmark" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 4.75c1.62 0 3.06.56 4.21 1.64l3.15-3.15A10.5 10.5 0 0 0 12 .5 11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 6.68 9.14 4.75 12 4.75z"/></svg></div><p>Super friendly and courteous service. Fast and tidy at absolutely fair prices.</p><div class="who"><span class="av">S</span><div><b>Stefan Paetzold</b><span>Google Review</span></div></div></div>
+      <div class="rev"><div class="head"><span class="stars">★★★★★</span><svg class="gmark" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 4.75c1.62 0 3.06.56 4.21 1.64l3.15-3.15A10.5 10.5 0 0 0 12 .5 11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 6.68 9.14 4.75 12 4.75z"/></svg></div><p>If you really love your laundry, take it to these fine folks! Fast and friendly service can't be beat — and wonderfully reasonable prices for all of your laundry needs.</p><div class="who"><span class="av">D</span><div><b>Drake Maxwell</b><span>Google Review</span></div></div></div>
+      <div class="rev"><div class="head"><span class="stars">★★★★★</span><svg class="gmark" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 4.75c1.62 0 3.06.56 4.21 1.64l3.15-3.15A10.5 10.5 0 0 0 12 .5 11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 6.68 9.14 4.75 12 4.75z"/></svg></div><p>Excellent service, even better communication. I'll be using the service every week. Thanks guys!</p><div class="who"><span class="av">C</span><div><b>Christine Lombard</b><span>Google Review</span></div></div></div>
+      <!-- duplicate set for seamless loop -->
+      <div class="rev"><div class="head"><span class="stars">★★★★★</span><svg class="gmark" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 4.75c1.62 0 3.06.56 4.21 1.64l3.15-3.15A10.5 10.5 0 0 0 12 .5 11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 6.68 9.14 4.75 12 4.75z"/></svg></div><p>I consistently use their laundry services whenever I'm in Cape Town and I'm always impressed. Staff are courteous, communication is clear, and the pickup &amp; delivery is efficient and reliable. Highly competitive pricing too.</p><div class="who"><span class="av">R</span><div><b>Raeesa Osman</b><span>Google Review</span></div></div></div>
+      <div class="rev"><div class="head"><span class="stars">★★★★★</span><svg class="gmark" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 4.75c1.62 0 3.06.56 4.21 1.64l3.15-3.15A10.5 10.5 0 0 0 12 .5 11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 6.68 9.14 4.75 12 4.75z"/></svg></div><p>Tourists — don't go anywhere else! I reached out on WhatsApp, a human followed up and scheduled a pickup from my hotel. Pickup was 8am and my clothes came back nicely folded by noon. Smooth transaction.</p><div class="who"><span class="av">K</span><div><b>Kim Srey</b><span>Google Review</span></div></div></div>
+      <div class="rev"><div class="head"><span class="stars">★★★★★</span><svg class="gmark" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 4.75c1.62 0 3.06.56 4.21 1.64l3.15-3.15A10.5 10.5 0 0 0 12 .5 11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 6.68 9.14 4.75 12 4.75z"/></svg></div><p>So glad we found I Love My Laundry. Communication, pickup and delivery was smooth. Clean, nice-smelling, ironed clothes and the folding was beautifully done. Definitely using them again!</p><div class="who"><span class="av">B</span><div><b>Brenda Lee</b><span>Google Review</span></div></div></div>
+      <div class="rev"><div class="head"><span class="stars">★★★★★</span><svg class="gmark" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 4.75c1.62 0 3.06.56 4.21 1.64l3.15-3.15A10.5 10.5 0 0 0 12 .5 11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 6.68 9.14 4.75 12 4.75z"/></svg></div><p>Super friendly and courteous service. Fast and tidy at absolutely fair prices.</p><div class="who"><span class="av">S</span><div><b>Stefan Paetzold</b><span>Google Review</span></div></div></div>
+      <div class="rev"><div class="head"><span class="stars">★★★★★</span><svg class="gmark" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 4.75c1.62 0 3.06.56 4.21 1.64l3.15-3.15A10.5 10.5 0 0 0 12 .5 11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 6.68 9.14 4.75 12 4.75z"/></svg></div><p>If you really love your laundry, take it to these fine folks! Fast and friendly service can't be beat — and wonderfully reasonable prices for all of your laundry needs.</p><div class="who"><span class="av">D</span><div><b>Drake Maxwell</b><span>Google Review</span></div></div></div>
+      <div class="rev"><div class="head"><span class="stars">★★★★★</span><svg class="gmark" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 4.75c1.62 0 3.06.56 4.21 1.64l3.15-3.15A10.5 10.5 0 0 0 12 .5 11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 6.68 9.14 4.75 12 4.75z"/></svg></div><p>Excellent service, even better communication. I'll be using the service every week. Thanks guys!</p><div class="who"><span class="av">C</span><div><b>Christine Lombard</b><span>Google Review</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BAND 1 (after reviews) ============ -->
+<style>
+.ctaband{padding:0 0 0}
+.ctaband.tight{padding:64px 0}
+.ctaband-inner{
+  background:linear-gradient(135deg,#1f7ae0,#155bb0);border-radius:var(--r-lg);padding:40px 44px;
+  display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap;position:relative;overflow:hidden;
+  box-shadow:0 26px 60px -28px rgba(21,60,120,.6);
+}
+.ctaband-inner::before{content:"";position:absolute;right:-30px;top:-50px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.08)}
+.ctaband-inner .t{position:relative;z-index:1}
+.ctaband-inner .t h3{color:#fff;font-size:clamp(1.45rem,2.6vw,1.95rem);margin-bottom:6px}
+.ctaband-inner .t p{color:#dbeafe;font-size:1.02rem}
+.ctaband-inner .acts{display:flex;gap:12px;flex-wrap:wrap;position:relative;z-index:1}
+.ctaband-inner .btn-light{background:#fff;color:var(--blue-deep)}
+.ctaband-inner .btn-light:hover{background:#eef5fc;transform:translateY(-2px)}
+.ctaband-inner .btn-wa-w{background:#25d366;color:#fff}
+.ctaband-inner .btn-wa-w:hover{background:#1eb455;transform:translateY(-2px)}
+@media(max-width:600px){.ctaband-inner{padding:30px 26px}.ctaband.tight{padding:48px 0}}
+</style>
+<section class="ctaband tight">
+  <div class="wrap reveal">
+    <div class="ctaband-inner">
+      <div class="t">
+        <h3>Join hundreds of happy Cape Town customers</h3>
+        <p>Book your collection in under a minute on WhatsApp.</p>
+      </div>
+      <div class="acts">
+        <a href="https://wa.me/message/PV7QPXLDF6WYI1" target="_blank" rel="noopener" class="btn btn-lg btn-wa-w">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35zM12 2a10 10 0 0 0-8.6 15.06L2 22l5.06-1.33A10 10 0 1 0 12 2z"/></svg>
+          Book A Collection
+        </a>
+        <a href="tel:+27731086342" class="btn btn-lg btn-light">Call Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+.services{padding:96px 0;background:linear-gradient(180deg,#fff 0%,var(--off) 100%)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.svc{
+  background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:32px 28px;
+  transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s;
+  position:relative;overflow:hidden;
+}
+.svc::after{content:"";position:absolute;inset:0;border-radius:var(--r);background:radial-gradient(420px 220px at 100% 0%,var(--blue-wash),transparent 70%);opacity:0;transition:opacity .35s}
+.svc:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:#cfe0f5}
+.svc:hover::after{opacity:1}
+.svc>*{position:relative;z-index:1}
+.svc .ic{width:58px;height:58px;border-radius:16px;background:linear-gradient(145deg,var(--blue-wash),#fff);border:1px solid #d8e8fa;color:var(--blue);display:grid;place-items:center;margin-bottom:20px;transition:transform .35s var(--ease)}
+.svc:hover .ic{transform:scale(1.06) rotate(-3deg)}
+.svc .ic svg{width:28px;height:28px}
+.svc h3{font-size:1.32rem;margin-bottom:9px}
+.svc p{color:var(--ink-soft);font-size:.97rem;margin-bottom:18px}
+.svc .more{display:inline-flex;align-items:center;gap:7px;font-weight:700;font-size:.92rem;color:var(--blue);transition:gap .25s}
+.svc .more svg{width:15px;height:15px;transition:transform .25s}
+.svc:hover .more{gap:11px}
+.svc .more:hover svg{transform:translateX(2px)}
+@media(max-width:900px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.svc-grid{grid-template-columns:1fr}.services{padding:64px 0}}
+</style>
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Our Services</span>
+      <h2>Everything your laundry needs</h2>
+      <p>From everyday wash-and-fold to specialist garment care — handled by a team that treats your clothes like their own.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7l2-3h14l2 3M3 7v13a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V7M3 7h18"/><circle cx="12" cy="13" r="4"/></svg></span>
+        <h3>Wash &amp; Fold</h3>
+        <p>Convenient full-service cleaning, drying and neat folding — ready to wear straight from the bag.</p>
+        <a href="#pricing" class="more">From R34/kg <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="svc reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="12" cy="12" r="4.5"/><circle cx="7" cy="7" r="1"/></svg></span>
+        <h3>Self-Service Laundry</h3>
+        <p>Modern, well-maintained machines available in-branch for customers who prefer to do it themselves.</p>
+        <a href="#contact" class="more">Find a branch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="svc reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2l1.5 4M18 2l-1.5 4M5 6h14l-1 4H6L5 6zM6 10v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V10"/></svg></span>
+        <h3>Dry Cleaning</h3>
+        <p>Professional care for suits, dresses, delicates and anything that needs a gentler, expert touch.</p>
+        <a href="#contact" class="more">Enquire now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="svc reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="6" width="15" height="11" rx="2"/><path d="M16 9h4l3 3v5h-7M5.5 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM18.5 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg></span>
+        <h3>Pickup &amp; Delivery</h3>
+        <p>Door-to-door convenience across the city. We collect, clean and return — you don't lift a finger.</p>
+        <a href="https://wa.me/message/PV7QPXLDF6WYI1" target="_blank" rel="noopener" class="more">Book a collection <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="svc reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 9l10-5 10 5-10 5L2 9z"/><path d="M2 9v7a2 2 0 0 0 1 1.7l8 4a2 2 0 0 0 2 0l8-4A2 2 0 0 0 22 16V9"/></svg></span>
+        <h3>Duvets &amp; Bedding</h3>
+        <p>Specialised cleaning for blankets, duvet inners and larger household items — freshened and fluffed.</p>
+        <a href="#pricing" class="more">From R150 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="svc reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V7l8-4 8 4v14M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01"/></svg></span>
+        <h3>Commercial Laundry</h3>
+        <p>Reliable, high-volume laundry solutions for hotels, guesthouses, restaurants and more.</p>
+        <a href="#commercial" class="more">Business solutions <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<style>
+.how{padding:96px 0;background:#fff}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;position:relative;margin-top:8px}
+.steps::before{content:"";position:absolute;top:46px;left:16%;right:16%;height:2px;background:repeating-linear-gradient(90deg,var(--sky) 0 10px,transparent 10px 20px)}
+.step{text-align:center;position:relative}
+.step .num{
+  width:92px;height:92px;border-radius:50%;margin:0 auto 22px;display:grid;place-items:center;position:relative;
+  background:#fff;border:2px solid var(--blue-wash);box-shadow:var(--shadow-sm);
+}
+.step .num .ring{position:absolute;inset:0;border-radius:50%;border:2px solid transparent;border-top-color:var(--blue);transform:rotate(-45deg)}
+.step .num .ic{width:40px;height:40px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-family:var(--font-head);font-weight:700;font-size:1.2rem}
+.step h3{font-size:1.28rem;margin-bottom:9px}
+.step p{color:var(--ink-soft);font-size:.97rem;max-width:290px;margin:0 auto}
+@media(max-width:760px){
+  .steps{grid-template-columns:1fr;gap:34px}
+  .steps::before{display:none}
+}
+</style>
+<section class="how">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">How It Works</span>
+      <h2>Clean laundry in three easy steps</h2>
+      <p>Whether you pop into a branch or book a collection, the process couldn't be simpler.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="num"><span class="ring"></span><span class="ic">1</span></div>
+        <h3>Drop Off or Schedule Collection</h3>
+        <p>Bring your laundry to any branch, or message us on WhatsApp to book a door-to-door pickup.</p>
+      </div>
+      <div class="step reveal">
+        <div class="num"><span class="ring"></span><span class="ic">2</span></div>
+        <h3>We Wash, Dry &amp; Fold</h3>
+        <p>Our team cleans everything with care and professional-grade equipment, then folds it neatly.</p>
+      </div>
+      <div class="step reveal">
+        <div class="num"><span class="ring"></span><span class="ic">3</span></div>
+        <h3>Collect or Receive Delivery</h3>
+        <p>We let you know the moment it's ready — collect in-store or have it delivered back to your door.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EMOTIONAL BENEFIT ============ -->
+<style>
+.emotion{padding:0 0 96px;background:#fff;overflow:hidden}
+.emotion-card{
+  display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:var(--r-lg);overflow:hidden;
+  box-shadow:var(--shadow);border:1px solid var(--line);
+}
+.emotion-text{padding:54px 50px;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(160deg,#fff,var(--off))}
+.emotion-text .eyebrow{margin-bottom:16px}
+.emotion-text h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-bottom:16px;line-height:1.1}
+.emotion-text h2 .accent{color:var(--blue)}
+.emotion-text p.lead{color:var(--ink-soft);font-size:1.08rem;margin-bottom:24px;max-width:460px}
+.emotion-tags{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:30px}
+.emotion-tags span{display:inline-flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line);border-radius:var(--r-pill);padding:8px 15px;font-size:.88rem;font-weight:600;color:var(--ink-soft)}
+.emotion-tags span svg{width:15px;height:15px;color:var(--blue)}
+.emotion-cta{display:flex;flex-wrap:wrap;gap:13px}
+/* IMAGE SLOT */
+.emotion-visual{position:relative;min-height:420px;background:linear-gradient(160deg,#cfe3f7,#bcd9f4)}
+.emotion-visual .e-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .6s var(--ease)}
+.emotion-visual .e-img.loaded{opacity:1}
+.emotion-visual:has(.e-img.loaded) .e-ph{display:none}
+.emotion-visual .e-ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:#5b86b8;text-align:center;padding:24px}
+.emotion-visual .e-ph svg{width:54px;height:54px;opacity:.55}
+.emotion-visual .e-ph b{font-family:var(--font-head);font-weight:600;font-size:1rem;color:#4d7bb0}
+.emotion-visual .e-ph span{font-size:.82rem;color:#6e97c4;max-width:230px}
+.emotion-stat{position:absolute;left:26px;bottom:26px;z-index:2;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-radius:16px;padding:14px 20px;box-shadow:0 16px 38px -16px rgba(21,60,120,.45)}
+.emotion-stat b{display:block;font-family:var(--font-head);font-size:1.5rem;font-weight:800;color:var(--ink);line-height:1}
+.emotion-stat span{font-size:.82rem;color:var(--ink-faint);font-weight:600}
+@media(max-width:860px){
+  .emotion-card{grid-template-columns:1fr}
+  .emotion-visual{min-height:280px;order:2}
+  .emotion-text{order:1;padding:38px 26px}
+}
+@media(max-width:540px){
+  .emotion-text{padding:32px 22px}
+  .emotion-text h2{font-size:clamp(1.7rem,7vw,2.1rem)}
+  .emotion-cta{flex-direction:column}
+  .emotion-cta .btn{width:100%}
+  .emotion-stat{left:16px;bottom:16px;padding:12px 16px}
+  .emotion-stat b{font-size:1.3rem}
+  .emotion-visual .e-ph{padding:20px 20px 70px}
+}
+</style>
+<section class="emotion">
+  <div class="wrap reveal">
+    <div class="emotion-card">
+      <div class="emotion-text">
+        <span class="eyebrow">More Time For You</span>
+        <h2>Let laundry take <span class="accent">care of itself.</span></h2>
+        <p class="lead">Your weekend shouldn't disappear into the washing machine. Drop it off or book a collection, and get back to the things that actually matter.</p>
+        <div class="emotion-tags">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>Busy Families</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg>Professionals</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/><circle cx="12" cy="12" r="10"/></svg>Tourists</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-6 9 6v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9z"/><path d="M9 22V12h6v10"/></svg>Airbnb Hosts</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l8-4 8 4v14M9 21v-6h6v6"/></svg>Business Owners</span>
+        </div>
+        <div class="emotion-cta">
+          <a href="https://wa.me/message/PV7QPXLDF6WYI1" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35zM12 2a10 10 0 0 0-8.6 15.06L2 22l5.06-1.33A10 10 0 1 0 12 2z"/></svg>
+            Book A Collection
+          </a>
+          <a href="#services" class="btn btn-ghost btn-lg">See How It Works</a>
+        </div>
+      </div>
+      <div class="emotion-visual">
+        <!-- IMAGE SLOT: add a warm lifestyle photo (folded laundry handed to a happy customer, relaxed family, etc). Put URL in src below. -->
+        <img class="e-img" src="" alt="More free time with professional laundry service" onload="this.classList.add('loaded')" onerror="this.style.display='none'">
+        <div class="e-ph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.5-3.5a2 2 0 0 0-2.8 0L7 19"/></svg>
+          <b>Add a lifestyle photo</b>
+          <span>A relaxed customer, folded laundry handed over, or a happy family moment</span>
+        </div>
+        <div class="emotion-stat"><b>Hours saved</b><span>every single week</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EARLY BIRD BANNER ============ -->
+<style>
+.earlybird{padding:0 0 96px;background:#fff}
+.eb-card{
+  background:linear-gradient(135deg,#1f7ae0,#155bb0);border-radius:var(--r-lg);padding:44px 48px;
+  display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap;position:relative;overflow:hidden;
+  box-shadow:0 30px 70px -30px rgba(21,60,120,.6);
+}
+.eb-card::before{content:"";position:absolute;right:-40px;top:-60px;width:260px;height:260px;border-radius:50%;background:rgba(255,255,255,.08)}
+.eb-card::after{content:"";position:absolute;right:90px;bottom:-80px;width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,.06)}
+.eb-text{position:relative;z-index:1;max-width:620px}
+.eb-text .tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.16);color:#fff;padding:6px 14px;border-radius:var(--r-pill);font-size:13px;font-weight:700;letter-spacing:.04em;margin-bottom:14px}
+.eb-text h3{color:#fff;font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:8px}
+.eb-text p{color:#dbeafe;font-size:1.05rem}
+.eb-text p b{color:#fff}
+.eb-card .btn{position:relative;z-index:1;background:#fff;color:var(--blue-deep)}
+.eb-card .btn:hover{background:#eef5fc;transform:translateY(-2px)}
+@media(max-width:600px){.eb-card{padding:32px 26px}.earlybird{padding-bottom:64px}}
+</style>
+<section class="earlybird">
+  <div class="wrap reveal">
+    <div class="eb-card">
+      <div class="eb-text">
+        <span class="tag">🐦 Early Bird Special</span>
+        <h3>FREE Pickup &amp; Delivery every Thursday</h3>
+        <p>Book a collection between <b>7–9am on Thursdays</b> and pickup &amp; delivery is on us. Limited slots — bookings must be in by <b>Wednesday 3pm</b>.</p>
+      </div>
+      <a href="https://wa.me/message/PV7QPXLDF6WYI1" target="_blank" rel="noopener" class="btn btn-lg">Claim Your Slot</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<style>
+.why{padding:96px 0;background:var(--off)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.benefit{
+  background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px;display:flex;gap:18px;align-items:flex-start;
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease);
+}
+.benefit:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.benefit .ic{width:50px;height:50px;border-radius:14px;flex:none;display:grid;place-items:center;background:var(--mint);color:#1d9e7f}
+.benefit .ic.b{background:var(--blue-wash);color:var(--blue)}
+.benefit .ic svg{width:25px;height:25px}
+.benefit h4{font-size:1.12rem;margin-bottom:5px;font-family:var(--font-head)}
+.benefit p{color:var(--ink-soft);font-size:.92rem;line-height:1.5}
+@media(max-width:900px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:580px){.why-grid{grid-template-columns:1fr}.why{padding:64px 0}}
+</style>
+<section class="why">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why Choose Us</span>
+      <h2>Laundry you can actually rely on</h2>
+      <p>Thousands of Capetonians trust us with their washing every week. Here's why they keep coming back.</p>
+    </div>
+    <div class="why-grid">
+      <div class="benefit reveal"><span class="ic b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h4>Fast Turnaround Times</h4><p>Same-day service available, with express options in as little as 2–3 hours.</p></div></div>
+      <div class="benefit reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><div><h4>Experienced Team</h4><p>Friendly, professional staff who genuinely care about every load they handle.</p></div></div>
+      <div class="benefit reveal"><span class="ic b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l8-4 8 4v14M9 21v-6h6v6"/></svg></span><div><h4>Commercial Capacity</h4><p>Volume and consistency for hotels, guesthouses and busy hospitality venues.</p></div></div>
+      <div class="benefit reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span><div><h4>Affordable Rates</h4><p>Competitive, transparent pricing that offers great value — confirmed by our reviews.</p></div></div>
+      <div class="benefit reveal"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg></span><div><h4>Eco-Friendly Products</h4><p>Gentle, environmentally-conscious detergents that are kind to fabrics and skin.</p></div></div>
+      <div class="benefit reveal"><span class="ic b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span><div><h4>Spotlessly Clean Facility</h4><p>Modern, hygienic branches and equipment kept to a high standard, every day.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMMERCIAL ============ -->
+<style>
+.commercial{padding:96px 0;background:#fff;overflow:hidden}
+.comm-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.comm-text h2{font-size:clamp(1.9rem,4vw,2.8rem);margin:16px 0 16px}
+.comm-text p.lead{color:var(--ink-soft);font-size:1.08rem;margin-bottom:26px}
+.comm-points{display:flex;flex-direction:column;gap:14px;margin-bottom:32px}
+.comm-points li{display:flex;gap:13px;align-items:flex-start;font-weight:500;color:var(--ink-soft)}
+.comm-points .tick{width:24px;height:24px;border-radius:50%;background:var(--mint);color:#1d9e7f;flex:none;display:grid;place-items:center}
+.comm-points .tick svg{width:14px;height:14px}
+.comm-points b{color:var(--ink);font-weight:700}
+.comm-visual{position:relative}
+.industries{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.ind{
+  background:linear-gradient(160deg,#fff,var(--off));border:1px solid var(--line);border-radius:var(--r-sm);
+  padding:20px 18px;display:flex;align-items:center;gap:13px;transition:transform .3s var(--ease),box-shadow .3s,border-color .3s;
+}
+.ind:hover{transform:translateY(-3px);box-shadow:var(--shadow-sm);border-color:#cfe0f5}
+.ind .ic{width:42px;height:42px;border-radius:11px;background:var(--blue-wash);color:var(--blue);display:grid;place-items:center;flex:none}
+.ind .ic svg{width:22px;height:22px}
+.ind b{font-size:.98rem;font-family:var(--font-head);font-weight:600;color:var(--ink);line-height:1.2}
+@media(max-width:880px){.comm-grid{grid-template-columns:1fr;gap:40px}.commercial{padding:64px 0}}
+@media(max-width:540px){
+  .industries{gap:11px}
+  .ind{padding:15px 13px;gap:11px}
+  .ind .ic{width:38px;height:38px;border-radius:10px}
+  .ind .ic svg{width:20px;height:20px}
+  .ind b{font-size:.9rem}
+}
+@media(max-width:360px){.industries{grid-template-columns:1fr}}
+/* client showcase strip */
+.client-showcase{margin-top:48px;padding-top:40px;border-top:1px solid var(--line);text-align:center}
+.cs-label{font-size:.82rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:24px}
+.cs-logos{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.cs-logo{
+  height:74px;border-radius:var(--r-sm);background:linear-gradient(160deg,#fff,var(--off));border:1px solid var(--line);
+  display:grid;place-items:center;transition:transform .3s var(--ease),box-shadow .3s,border-color .3s;padding:12px;
+}
+.cs-logo:hover{transform:translateY(-3px);box-shadow:var(--shadow-sm);border-color:#cfe0f5}
+.cs-logo span{font-family:var(--font-head);font-weight:600;font-size:.92rem;color:var(--ink-faint)}
+.cs-logo img{max-height:100%;max-width:100%;object-fit:contain;filter:grayscale(1);opacity:.7;transition:filter .3s,opacity .3s}
+.cs-logo:hover img{filter:grayscale(0);opacity:1}
+@media(max-width:760px){.cs-logos{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:420px){.cs-logos{grid-template-columns:repeat(2,1fr)}}
+</style>
+<section class="commercial" id="commercial">
+  <div class="wrap">
+    <div class="comm-grid">
+      <div class="comm-text reveal">
+        <span class="eyebrow">Commercial Laundry</span>
+        <h2>Reliable laundry solutions for businesses</h2>
+        <p class="lead">When your business runs on fresh linen, you need a partner who delivers on time, every time. We handle volume with the same care as a single load.</p>
+        <ul class="comm-points">
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Volume capacity</b> — handle high turnover without compromising on quality.</span></li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Consistency</b> — the same spotless standard on every single batch.</span></li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Recurring accounts</b> — set up a regular schedule and we'll keep you stocked.</span></li>
+        </ul>
+        <a href="https://wa.me/message/PV7QPXLDF6WYI1" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Request a Business Quote</a>
+      </div>
+      <div class="comm-visual reveal">
+        <div class="industries">
+          <div class="ind"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-5h6v5M9 11h.01M15 11h.01"/></svg></span><b>Hotels</b></div>
+          <div class="ind"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21V10l9-7 9 7v11M9 21v-6a3 3 0 0 1 6 0v6"/></svg></span><b>Guesthouses</b></div>
+          <div class="ind"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-6 9 6v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9z"/><path d="M9 22V12h6v10"/></svg></span><b>Airbnb Hosts</b></div>
+          <div class="ind"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11h18M5 11V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4M6 11v6a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-6M9 19v2M15 19v2"/></svg></span><b>Restaurants</b></div>
+          <div class="ind"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a3 3 0 0 0-3 3c0 1.5 3 6 3 6s3-4.5 3-6a3 3 0 0 0-3-3zM5 21c0-4 3-7 7-7s7 3 7 7"/></svg></span><b>Spas</b></div>
+          <div class="ind"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2v6a6 6 0 0 0 12 0V2M6 8h12M9 14v6M15 14v6M9 20h6"/></svg></span><b>Salons</b></div>
+          <div class="ind"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/><rect x="3" y="3" width="18" height="18" rx="3"/></svg></span><b>Medical Practices</b></div>
+          <div class="ind"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><b>& Many More</b></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- client showcase strip -->
+    <div class="client-showcase reveal">
+      <p class="cs-label">Trusted by hospitality &amp; service businesses across Cape Town</p>
+      <div class="cs-logos">
+        <!-- LOGO SLOTS: drop client logos into each .cs-logo (replace the text label with <img src="...">). -->
+        <div class="cs-logo"><span>Hotels</span></div>
+        <div class="cs-logo"><span>Guesthouses</span></div>
+        <div class="cs-logo"><span>Airbnb Hosts</span></div>
+        <div class="cs-logo"><span>Restaurants</span></div>
+        <div class="cs-logo"><span>Spas</span></div>
+        <div class="cs-logo"><span>Salons</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<style>
+.pricing{padding:96px 0;background:linear-gradient(180deg,var(--off),#fff)}
+.price-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-bottom:34px}
+.price{
+  background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px 26px;text-align:center;
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s;position:relative;
+}
+.price:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:#cfe0f5}
+.price.feature{border-color:var(--blue);box-shadow:0 20px 50px -24px rgba(31,122,224,.5)}
+.price.feature .flag{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--blue);color:#fff;font-size:12px;font-weight:700;padding:5px 14px;border-radius:var(--r-pill);letter-spacing:.04em}
+.price .ic{width:54px;height:54px;border-radius:15px;background:var(--blue-wash);color:var(--blue);display:grid;place-items:center;margin:0 auto 16px}
+.price .ic svg{width:27px;height:27px}
+.price h4{font-size:1.18rem;margin-bottom:10px;font-family:var(--font-head)}
+.price .amt{font-family:var(--font-head);font-size:2.1rem;font-weight:600;color:var(--blue);line-height:1}
+.price .amt small{font-size:.95rem;color:var(--ink-faint);font-weight:500}
+.price .from{display:block;font-size:.8rem;color:var(--ink-faint);font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
+.price .note{font-size:.86rem;color:var(--ink-soft);margin-top:10px}
+.price-foot{text-align:center;background:#fff;border:1px dashed var(--grey-200);border-radius:var(--r);padding:24px;color:var(--ink-soft);max-width:680px;margin:0 auto;display:flex;flex-direction:column;gap:14px;align-items:center}
+.price-foot b{color:var(--ink)}
+@media(max-width:900px){.price-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.price-grid{grid-template-columns:1fr}.pricing{padding:64px 0}}
+</style>
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Pricing</span>
+      <h2>Simple, transparent rates</h2>
+      <p>No surprises — clear pricing on the services you use most. Colour separation under 8kg is charged as two loads.</p>
+    </div>
+    <div class="price-grid">
+      <div class="price feature reveal">
+        <span class="flag">Most Popular</span>
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="13" r="6"/><path d="M3 7l2-3h14l2 3M3 7h18"/></svg></span>
+        <h4>Wash, Dry &amp; Fold</h4>
+        <span class="from">From</span>
+        <div class="amt">R34<small>/kg</small></div>
+        <p class="note">0–5kg charged at R170</p>
+      </div>
+      <div class="price reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 9l10-5 10 5-10 5L2 9z"/><path d="M2 9v7a2 2 0 0 0 1 1.7l8 4a2 2 0 0 0 2 0l8-4A2 2 0 0 0 22 16V9"/></svg></span>
+        <h4>Duvet &amp; Blankets</h4>
+        <span class="from">From</span>
+        <div class="amt">R150</div>
+        <p class="note">Single to King · up to R350</p>
+      </div>
+      <div class="price reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 21V7l5-4 5 4M5 7h10M9 11h2M12 7v14M12 21h7V11l-3-2"/></svg></span>
+        <h4>Ironing</h4>
+        <span class="from">From</span>
+        <div class="amt">R9<small>/item</small></div>
+        <p class="note">Pillowcases to duvet covers</p>
+      </div>
+      <div class="price reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V7l8-4 8 4v14M9 21v-6h6v6"/></svg></span>
+        <h4>Commercial</h4>
+        <span class="from">&nbsp;</span>
+        <div class="amt" style="font-size:1.5rem;padding-top:6px">Custom Quote</div>
+        <p class="note">Tailored to your volume</p>
+      </div>
+    </div>
+    <div class="price-foot reveal">
+      <p>Pickup &amp; delivery is priced by location — and it's <b>free every Thursday morning</b> with our Early Bird special. Contact us for exact pricing and custom requirements.</p>
+      <a href="https://wa.me/message/PV7QPXLDF6WYI1" target="_blank" rel="noopener" class="btn btn-primary">Get Your Exact Price</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BAND 2 (after pricing) ============ -->
+<section class="ctaband tight">
+  <div class="wrap reveal">
+    <div class="ctaband-inner">
+      <div class="t">
+        <h3>Get a price in under a minute</h3>
+        <p>Send us a message and we'll confirm your exact quote — residential or commercial.</p>
+      </div>
+      <div class="acts">
+        <a href="https://wa.me/message/PV7QPXLDF6WYI1" target="_blank" rel="noopener" class="btn btn-lg btn-wa-w">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35zM12 2a10 10 0 0 0-8.6 15.06L2 22l5.06-1.33A10 10 0 1 0 12 2z"/></svg>
+          WhatsApp Us
+        </a>
+        <a href="tel:+27731086342" class="btn btn-lg btn-light">Call a Branch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FIND YOUR NEAREST BRANCH ============ -->
+<style>
+.branches{padding:96px 0;background:linear-gradient(180deg,#fff,var(--off))}
+.branch-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:8px}
+.bcard{
+  background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
+  transition:transform .3s var(--ease),box-shadow .3s,border-color .3s;display:flex;flex-direction:column;
+}
+.bcard:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#cfe0f5}
+.bcard .top{display:flex;gap:16px;align-items:flex-start;padding:26px 26px 0}
+.bcard .pin{width:50px;height:50px;border-radius:14px;background:linear-gradient(145deg,var(--blue-bright),var(--blue-deep));color:#fff;display:grid;place-items:center;flex:none;box-shadow:0 8px 18px -8px rgba(31,122,224,.7)}
+.bcard .pin svg{width:25px;height:25px}
+.bcard h4{font-size:1.24rem;margin-bottom:5px}
+.bcard .addr{color:var(--ink-soft);font-size:.94rem;line-height:1.4}
+.bcard .meta{padding:18px 26px 0;display:flex;flex-direction:column;gap:9px}
+.bcard .meta .mrow{display:flex;align-items:center;gap:10px;font-size:.9rem;color:var(--ink-soft)}
+.bcard .meta .mrow svg{width:16px;height:16px;color:var(--blue);flex:none}
+.bcard .meta .mrow b{color:var(--ink);font-weight:600}
+.bcard .open-badge{display:inline-flex;align-items:center;gap:6px;background:#e6f8ee;color:#147a4d;font-weight:700;font-size:.78rem;padding:3px 10px;border-radius:var(--r-pill)}
+.bcard .open-badge .led{width:7px;height:7px;border-radius:50%;background:#1bbd6e;box-shadow:0 0 0 3px rgba(27,189,110,.2)}
+.bcard .acts{display:flex;gap:10px;padding:22px 26px 26px;margin-top:auto}
+.bcard .acts a{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px;border-radius:13px;font-weight:700;font-size:.92rem;transition:transform .25s var(--ease),background .25s,border-color .25s}
+.bcard .acts svg{width:16px;height:16px}
+.bcard .acts .dir{background:var(--blue);color:#fff}
+.bcard .acts .dir:hover{background:var(--blue-deep);transform:translateY(-2px)}
+.bcard .acts .call{background:#fff;border:1.5px solid var(--grey-200);color:var(--ink)}
+.bcard .acts .call:hover{border-color:var(--blue);color:var(--blue);transform:translateY(-2px)}
+@media(max-width:760px){.branch-grid{grid-template-columns:1fr}.branches{padding:64px 0}}
+</style>
+<section class="branches">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Our Branches</span>
+      <h2>Find your nearest branch</h2>
+      <p>Four convenient locations across the City Bowl and Atlantic Seaboard. Pop in to drop off, or book a collection from anywhere.</p>
+    </div>
+    <div class="branch-grid">
+      <div class="bcard reveal">
+        <div class="top">
+          <span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><h4>Buitengracht</h4><p class="addr">59 Buitengracht Street, Cape Town</p></div>
+        </div>
+        <div class="meta">
+          <div class="mrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><b>Mon–Sat 8am–5pm</b> · Sun Closed <span class="open-badge"><span class="led"></span>Open</span></div>
+        </div>
+        <div class="acts">
+          <a class="dir" href="https://www.google.com/maps/dir/?api=1&destination=59+Buitengracht+Street+Cape+Town" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>Directions</a>
+          <a class="call" href="tel:+27731086342"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>073 108 6342</a>
+        </div>
+      </div>
+      <div class="bcard reveal">
+        <div class="top">
+          <span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><h4>Barrack Street</h4><p class="addr">37 Barrack Street, Cape Town</p></div>
+        </div>
+        <div class="meta">
+          <div class="mrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><b>Mon–Sat 8am–5pm</b> · Sun Closed <span class="open-badge"><span class="led"></span>Open</span></div>
+        </div>
+        <div class="acts">
+          <a class="dir" href="https://www.google.com/maps/dir/?api=1&destination=37+Barrack+Street+Cape+Town" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>Directions</a>
+          <a class="call" href="tel:+27796100235"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>079 610 0235</a>
+        </div>
+      </div>
+      <div class="bcard reveal">
+        <div class="top">
+          <span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><h4>Cobern Street</h4><p class="addr">16 Cobern Street, Cape Town</p></div>
+        </div>
+        <div class="meta">
+          <div class="mrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><b>Mon–Sat 8am–5pm</b> · Sun Closed <span class="open-badge"><span class="led"></span>Open</span></div>
+        </div>
+        <div class="acts">
+          <a class="dir" href="https://www.google.com/maps/dir/?api=1&destination=16+Cobern+Street+Cape+Town" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>Directions</a>
+          <a class="call" href="tel:+27214254251"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>021 425 4251</a>
+        </div>
+      </div>
+      <div class="bcard reveal">
+        <div class="top">
+          <span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><h4>Green Point</h4><p class="addr">55 Main Road, Green Point, Cape Town</p></div>
+        </div>
+        <div class="meta">
+          <div class="mrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><b>Mon–Sat 8am–5pm</b> · Sun Closed <span class="open-badge"><span class="led"></span>Open</span></div>
+        </div>
+        <div class="acts">
+          <a class="dir" href="https://www.google.com/maps/dir/?api=1&destination=55+Main+Road+Green+Point+Cape+Town" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>Directions</a>
+          <a class="call" href="tel:+27214343338"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>021 434 3338</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<style>
+.faq{padding:96px 0;background:var(--off)}
+.faq-wrap{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.fitem{background:#fff;border:1px solid var(--line);border-radius:var(--r-sm);overflow:hidden;transition:box-shadow .3s,border-color .3s}
+.fitem.open{box-shadow:var(--shadow-sm);border-color:#cfe0f5}
+.fq{width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-family:var(--font-head);font-weight:600;font-size:1.08rem;color:var(--ink)}
+.fq .pm{width:30px;height:30px;border-radius:50%;background:var(--blue-wash);color:var(--blue);flex:none;display:grid;place-items:center;transition:transform .3s var(--ease),background .3s}
+.fitem.open .fq .pm{transform:rotate(45deg);background:var(--blue);color:#fff}
+.fq .pm svg{width:16px;height:16px}
+.fa{max-height:0;overflow:hidden;transition:max-height .4s var(--ease)}
+.fa p{padding:0 24px 22px;color:var(--ink-soft);font-size:.98rem;line-height:1.6}
+@media(max-width:600px){.faq{padding:64px 0}.fq{font-size:1rem;padding:18px 20px}}
+</style>
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Questions, answered</h2>
+      <p>Everything you need to know before booking. Still unsure? Just message us on WhatsApp.</p>
+    </div>
+    <div class="faq-wrap">
+      <div class="fitem reveal"><button type="button" class="fq">How long does laundry take?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="fa"><p>Standard wash, dry &amp; fold is typically ready the same day. Need it sooner? We offer express service in as little as 2–3 hours at selected branches — just ask when you drop off or book.</p></div></div>
+      <div class="fitem reveal"><button type="button" class="fq">Do you offer same-day service?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="fa"><p>Yes. Same-day turnaround is available on most standard loads when dropped off in the morning. Express options are also available for when you're in a real hurry.</p></div></div>
+      <div class="fitem reveal"><button type="button" class="fq">Do you provide pickup and delivery?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="fa"><p>Absolutely — it's one of our most popular services. Book on WhatsApp, choose a time and place, and our driver collects your laundry. Pricing is based on location, and it's completely free every Thursday morning with our Early Bird special.</p></div></div>
+      <div class="fitem reveal"><button type="button" class="fq">What payment methods do you accept?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="fa"><p>We accept EFT and SnapScan, as well as cash or card on delivery. For pickup &amp; delivery, we send an invoice with an easy payment link straight to your WhatsApp.</p></div></div>
+      <div class="fitem reveal"><button type="button" class="fq">Can businesses open recurring accounts?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="fa"><p>Yes. We work with hotels, guesthouses, Airbnb hosts, restaurants, spas and more on regular recurring schedules. Get in touch for a custom commercial quote tailored to your volume.</p></div></div>
+      <div class="fitem reveal"><button type="button" class="fq">Do you clean duvets and blankets?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="fa"><p>We do — blankets and synthetic duvet inners are priced from R150 (single) up to R350 (double-layer queen/king). Larger household bedding is one of our specialities.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<style>
+.finalcta{padding:0 0 0;background:var(--off)}
+.fc-inner{
+  background:radial-gradient(900px 500px at 80% -20%,#2e90ff,transparent 60%),linear-gradient(135deg,#1f7ae0,#124e98);
+  padding:80px 40px;text-align:center;color:#fff;position:relative;overflow:hidden;
+}
+.fc-inner::before{content:"";position:absolute;left:-60px;bottom:-90px;width:300px;height:300px;border-radius:50%;background:rgba(255,255,255,.06)}
+.fc-inner .bubbles span{position:absolute;border-radius:50%;background:rgba(255,255,255,.12);animation:float 7s ease-in-out infinite}
+.fc-inner h2{color:#fff;font-size:clamp(2rem,4.6vw,3.2rem);margin-bottom:16px;position:relative}
+.fc-inner p{color:#dbeafe;font-size:1.12rem;max-width:560px;margin:0 auto 30px;position:relative}
+.fc-cta{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-bottom:30px;position:relative}
+.fc-cta .btn-light{background:#fff;color:var(--blue-deep)}
+.fc-cta .btn-light:hover{background:#eef5fc;transform:translateY(-2px)}
+.fc-cta .btn-outline{background:rgba(255,255,255,.12);color:#fff;border:1.5px solid rgba(255,255,255,.4)}
+.fc-cta .btn-outline:hover{background:rgba(255,255,255,.2);transform:translateY(-2px)}
+.fc-trust{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:center;position:relative}
+.fc-trust .t{display:inline-flex;align-items:center;gap:8px;color:#dbeafe;font-weight:600;font-size:.94rem}
+.fc-trust .t svg{width:18px;height:18px;color:#bfe0fb}
+@media(max-width:600px){.fc-inner{padding:60px 24px}}
+</style>
+<section class="finalcta">
+  <div class="fc-inner reveal">
+    <div class="bubbles">
+      <span style="width:40px;height:40px;top:18%;left:12%"></span>
+      <span style="width:24px;height:24px;top:30%;right:16%;animation-delay:1s"></span>
+      <span style="width:60px;height:60px;bottom:14%;right:24%;animation-delay:.5s"></span>
+      <span style="width:18px;height:18px;bottom:30%;left:20%;animation-delay:1.8s"></span>
+    </div>
+    <h2>Ready for fresh, professionally cleaned laundry?</h2>
+    <p>Book a collection in under a minute, or call your nearest branch. Same-day service, fair prices and folding you'll love.</p>
+    <div class="fc-cta">
+      <a href="https://wa.me/message/PV7QPXLDF6WYI1" target="_blank" rel="noopener" class="btn btn-lg btn-light">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35zM12 2a10 10 0 0 0-8.6 15.06L2 22l5.06-1.33A10 10 0 1 0 12 2z"/></svg>
+        Book A Collection
+      </a>
+      <a href="tel:+27731086342" class="btn btn-lg btn-outline">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Us Today
+      </a>
+    </div>
+    <div class="fc-trust">
+      <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Same-Day Service</span>
+      <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Affordable Pricing</span>
+      <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Professional Care</span>
+      <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>Pickup &amp; Delivery</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT / FOOTER ============ -->
+<style>
+.footer{background:var(--ink);color:#b9cadb;padding:72px 0 0}
+.foot-grid{display:grid;grid-template-columns:1.7fr 1fr 1fr 1.25fr 1.1fr;gap:40px;padding-bottom:46px}
+.foot-brand .brand{color:#fff;margin-bottom:18px;font-size:1.3rem}
+.foot-logo-chip{display:inline-flex;align-items:center;background:#fff;border-radius:12px;padding:8px 12px}
+.foot-logo-chip .brand-logo{height:38px}
+.foot-brand .brand .mark{box-shadow:none}
+.foot-brand p{font-size:.94rem;color:#9fb3c7;max-width:300px;margin-bottom:22px;line-height:1.6}
+.foot-socials{display:flex;gap:10px}
+.foot-socials a{width:40px;height:40px;border-radius:11px;background:#22364d;display:grid;place-items:center;color:#cfe0f0;transition:background .25s,transform .25s}
+.foot-socials a:hover{background:var(--blue);transform:translateY(-2px)}
+.foot-socials svg{width:18px;height:18px}
+.foot-col{display:flex;flex-direction:column}
+.foot-col h4{color:#fff;font-family:var(--font-head);font-weight:700;font-size:.98rem;margin-bottom:18px;letter-spacing:.01em}
+.foot-col a{color:#9fb3c7;font-size:.93rem;transition:color .2s,padding .2s;padding:6px 0;display:inline-block;width:fit-content}
+.foot-col a:hover{color:#fff;padding-left:4px}
+.foot-branch-label{display:block;color:#cfe0f0;font-size:.82rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin:14px 0 8px}
+.foot-branches{display:flex;flex-direction:column;gap:7px;margin:0;padding:0;list-style:none}
+.foot-branches li{position:relative;padding-left:20px;color:#9fb3c7;font-size:.9rem;line-height:1.45}
+.foot-branches li::before{content:"";position:absolute;left:0;top:6px;width:8px;height:8px;border-radius:50% 50% 50% 0;background:var(--blue-bright);transform:rotate(-45deg)}
+.foot-hour{display:flex;justify-content:space-between;gap:14px;font-size:.88rem;color:#9fb3c7;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05)}
+.foot-hour:last-child{border-bottom:none}
+.foot-hour b{color:#e7eef5;font-weight:600;white-space:nowrap}
+.foot-bottom{border-top:1px solid #2a3f59;padding:24px 0;text-align:center;font-size:.86rem;color:#8298ae}
+.foot-bottom b{color:#cfe0f0;font-weight:700}
+@media(max-width:900px){.foot-grid{grid-template-columns:1fr 1fr 1fr;gap:34px 28px}.foot-brand{grid-column:1/-1}}
+@media(max-width:560px){.foot-grid{grid-template-columns:1fr 1fr}.footer{padding-top:56px}}
+@media(max-width:380px){.foot-grid{grid-template-columns:1fr}}
+</style>
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#home" class="brand foot-logo-link">
+          <span class="foot-logo-chip"><img class="brand-logo" src="https://www.ilovemylaundry.com/wp-content/uploads/2022/11/logo-150x86.png" alt="I Love My Laundry" width="150" height="86"
+            onerror="this.closest('.foot-logo-chip').style.display='none';this.closest('.foot-logo-link').querySelector('.brand-fallback').style.display='flex'"></span>
+          <span class="brand-fallback" style="display:none"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="6"/><path d="M9.5 13a2.5 2.5 0 0 1 2.5-2.5"/><path d="M4 6h16M7 6V4h4v2"/></svg></span><span>I&nbsp;<span style="color:var(--blue-bright)">♥</span>&nbsp;My&nbsp;<b style="color:#fff">Laundry</b></span></span>
+        </a>
+        <p>Cape Town's trusted laundry pickup &amp; delivery specialists. Wash, dry &amp; fold, dry cleaning and door-to-door collection across the city.</p>
+        <div class="foot-socials">
+          <a href="https://www.facebook.com/ILMLBuitengracht" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/ilovemylaundry" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.youtube.com/channel/UCbruxphvlAMfaNbENnlY-2A" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.5-.46-5.17a2.78 2.78 0 0 0-1.95-1.96C18.88 4.4 12 4.4 12 4.4s-6.88 0-8.59.47A2.78 2.78 0 0 0 1.46 6.83 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.17 2.78 2.78 0 0 0 1.95 1.96C5.12 19.6 12 19.6 12 19.6s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.96C23 15.5 23 12 23 12zM9.75 15.02V8.98L15.5 12z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Services</h4>
+        <a href="#services">Wash &amp; Fold</a>
+        <a href="#services">Self-Service</a>
+        <a href="#services">Dry Cleaning</a>
+        <a href="#services">Pickup &amp; Delivery</a>
+        <a href="#commercial">Commercial</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="#home">Home</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://www.ilovemylaundry.com/terms-conditions/" target="_blank" rel="noopener">Terms &amp; Conditions</a>
+        <a href="https://www.ilovemylaundry.com/terms-conditions/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="tel:+27731086342">073 108 6342</a>
+        <a href="https://wa.me/message/PV7QPXLDF6WYI1" target="_blank" rel="noopener">WhatsApp Booking</a>
+        <span class="foot-branch-label">Our Branches</span>
+        <ul class="foot-branches">
+          <li>59 Buitengracht St</li>
+          <li>37 Barrack St</li>
+          <li>16 Cobern St</li>
+          <li>55 Main Rd, Green Point</li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Opening Hours</h4>
+        <span class="foot-hour"><span>Mon – Fri</span><b>8am – 5pm</b></span>
+        <span class="foot-hour"><span>Saturday</span><b>8am – 5pm</b></span>
+        <span class="foot-hour"><span>Sunday</span><b>Closed</b></span>
+        <span class="foot-hour"><span>Public Holidays</span><b>9am – 1pm</b></span>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 I Love My Laundry. All rights reserved. · Website by <b>RootGrowth Digital</b></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a href="https://wa.me/message/PV7QPXLDF6WYI1" target="_blank" rel="noopener" class="fab-wa" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35zM12 2a10 10 0 0 0-8.6 15.06L2 22l5.06-1.33A10 10 0 1 0 12 2z"/></svg>
+</a>
+
+<!-- ============ STICKY MOBILE CTA ============ -->
+<div class="mobile-cta">
+  <a href="tel:+27731086342" class="m-call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call</a>
+  <a href="https://wa.me/message/PV7QPXLDF6WYI1" target="_blank" rel="noopener" class="m-book"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35zM12 2a10 10 0 0 0-8.6 15.06L2 22l5.06-1.33A10 10 0 1 0 12 2z"/></svg>Book A Collection</a>
+</div>
+
+<style>
+.fab-wa{
+  position:fixed;right:22px;bottom:26px;width:60px;height:60px;border-radius:50%;background:#25d366;color:#fff;
+  display:grid;place-items:center;z-index:40;box-shadow:0 12px 30px -8px rgba(37,211,102,.7);
+  transition:transform .3s var(--ease);animation:pulse 2.6s ease-in-out infinite;
+}
+.fab-wa:hover{transform:scale(1.08)}
+.fab-wa:active{transform:scale(.96);transition-duration:.06s}
+.fab-wa svg{width:32px;height:32px}
+@keyframes pulse{0%,100%{box-shadow:0 12px 30px -8px rgba(37,211,102,.7),0 0 0 0 rgba(37,211,102,.45)}50%{box-shadow:0 12px 30px -8px rgba(37,211,102,.7),0 0 0 14px rgba(37,211,102,0)}}
+.mobile-cta{
+  position:fixed;left:0;right:0;bottom:0;z-index:45;display:none;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(255,255,255,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line);
+}
+.mobile-cta a{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px;border-radius:14px;font-weight:700;font-size:.96rem;transition:transform .15s var(--ease),background .2s,border-color .2s;-webkit-tap-highlight-color:transparent}
+.mobile-cta a:active{transform:scale(.96);transition-duration:.06s}
+.mobile-cta svg{width:18px;height:18px}
+.mobile-cta .m-call{background:#fff;border:1.5px solid var(--grey-200);color:var(--ink);flex:0 0 34%}
+.mobile-cta .m-book{background:var(--blue);color:#fff}
+@media(max-width:760px){
+  .mobile-cta{display:flex}
+  .fab-wa{bottom:84px;width:52px;height:52px}
+  .fab-wa svg{width:27px;height:27px}
+  /* clear the sticky bottom CTA so it never covers footer/content */
+  body{padding-bottom:calc(72px + env(safe-area-inset-bottom))}
+}
+</style>
+
+<!-- ============ JS ============ -->
+<script>
+(function(){
+  // nav shadow on scroll
+  var nav=document.getElementById('nav');
+  var onScroll=function(){nav.classList.toggle('scrolled',window.scrollY>12)};
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  // mobile drawer
+  var burger=document.getElementById('burger'),drawer=document.getElementById('drawer'),
+      scrim=document.getElementById('scrim'),dClose=document.getElementById('drawerClose');
+  function openD(){drawer.classList.add('open');scrim.classList.add('open');burger.classList.add('open');drawer.setAttribute('aria-hidden','false');document.body.style.overflow='hidden'}
+  function closeD(){drawer.classList.remove('open');scrim.classList.remove('open');burger.classList.remove('open');drawer.setAttribute('aria-hidden','true');document.body.style.overflow=''}
+  burger.addEventListener('click',openD);
+  scrim.addEventListener('click',closeD);
+  dClose.addEventListener('click',closeD);
+  drawer.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeD)});
+
+  // FAQ accordion
+  document.querySelectorAll('.fitem .fq').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var item=btn.parentElement,ans=item.querySelector('.fa'),isOpen=item.classList.contains('open');
+      document.querySelectorAll('.fitem').forEach(function(f){f.classList.remove('open');f.querySelector('.fa').style.maxHeight=null});
+      if(!isOpen){item.classList.add('open');ans.style.maxHeight=ans.scrollHeight+'px'}
+    });
+  });
+
+  // scroll reveal
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+    },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el,i){
+      // gentle stagger within shared parents
+      var d=(i%4)*60; el.style.transitionDelay=d+'ms';
+      io.observe(el);
+    });
+  }else{
+    document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')});
+  }
+})();
+</script>
+</body>
+</html>
